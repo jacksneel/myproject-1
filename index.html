@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Sample Website</title>
+    <title>Sample HTML Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f6f8;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
-            padding: 1rem;
+            padding: 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #444;
-            padding: 0.5rem;
+            background-color: #333;
+            padding: 10px;
             text-align: center;
         }
 
@@ -30,8 +30,87 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #4CAF50;
         }
+
+        main {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Sample Page</h1>
+    <p>A simple HTML starter template</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <div class="card">
+        <h2>About This Page</h2>
+        <p>This is a basic HTML layout with a header, navigation bar, content section, and footer.</p>
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <div class="card">
+        <h2>Features</h2>
+        <ul>
+            <li>Responsive layout</li>
+            <li>Simple styling</li>
+            <li>Interactive button</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 My Website | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Hello! You clicked the button 🎉");
+    }
+</script>
+
+</body>
+</html>
